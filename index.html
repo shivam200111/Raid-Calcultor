@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./images/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="times.jpg" alt=""></button>
+            <ul>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+		<li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+		<li><a href="#">I</a></li>
+               
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#">Calculator</a>
+                            <a href="#about">Raid 0</a>
+                            <a href="#services">Raid 1</a>
+                            <a href="#services">Raid 1E</a>
+                            <a href="#work">Raid 5</a>
+			    <a href="#work">Raid 5E</a>
+                            <a href="#work">Raid 5EE</a>
+                            <a href="#blog">Raid 10</a>
+                            <a href="#blog">Raid 50</a>
+                            <a href="#blog">Raid 60</a>
+                        </div>
+                    </div>
+                    
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="profile.jpg" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h1><span>Raid Calculator</span></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="" alt="">
+                </div>
+                <div class="flex-1 right">
+<h1>RAID 0 Calculator</h1>
+  <div class="container">
+    <label for="diskCount">Number of Disks:</label>
+    <input type="number" id="diskCount" min="2" value="2"><br>
+    <label for="diskSize">Disk Size (GB):</label>
+    <input type="number" id="diskSize" min="1" value="100"><br>
+    <button onclick="calculate()">Calculate</button>
+    <p>Total Capacity: <span id="totalCapacity">0</span> GB</p>
+  </div>
+                   	
+            </div>
+    <script src="script.js"></script>
+
+        </section>
+
+
+        <section id="services" class="services">
+            <div class="container">
+<div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="" alt="">
+                </div>
+                <div class="flex-1 right">
+              
+
+  <h1>RAID 1 & 1E Calculator</h1>
+  <div class="container">
+
+    <label for="totalDisks">Number of Disks:</label>
+    <input type="number" id="totalDisks" min="2" value="2"><br>
+    
+    <label for="usableSpace">Disk Size (GB):</label>
+    <input type="number" id="usableSpace" min="1" value="100"><br>
+   
+
+   <label for="raidLevel">RAID Type:</label>
+    <select id="raidLevel">
+      <option value="1">RAID 1</option>
+      <option value="1E">RAID 1E</option>
+    </select><br>
+    <button onclick="calculate1()">Calculate</button>
+    <p>Total Capacity: <span id="result">0</span> GB</p>
+  </div>
+                    </div>
+                </div>    
+
+            </div><br><br>
+<script src="script1.js"></script>
+<div class="card-wrapper">
+                    <div class="card">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>RAID 1 & 1E Calculator</h2>
+                        <p>There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="card">
+                        <i class="fa-solid fa-film"></i>
+                        <h2>RAID 1 & 1E Calculator</h2>
+                        <p>There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-python"></i>
+                        <h2>RAID 1 & 1E Calculator</h2>
+                        <p>There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </p>
+                    </div>
+
+        </section>
+
+        <section id="work" class="work">
+            <div class="container">
+               <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="" alt="">
+                </div>
+                <div class="flex-1 right">
+                    
+
+    <h1>RAID Calculator 5 & 5E & 5EE</h1>
+      <div class="container">
+        <label for="totalDisks2">Number of Drives:</label>
+        <input type="number" id="totalDisks2"  min="2" value="2"><br>
+       
+        <label for="usableSpace2">Disk Size (GB):</label>
+        <input type="number" id="usableSpace2"  min="2" value="100"><br>
+
+        <label for="raidLevel2">RAID Type:</label>
+        <select id="raidLevel2" >
+            <option value="5">RAID 5</option>
+            <option value="5E">RAID 5E</option>
+            <option value="5EE">RAID 5EE</option>
+        </select><br>
+     <button onclick="calculate5()">Calculate</button>
+    <p>Total Capacity: <span id="result5">0</span> GB</p>
+  </div>
+       
+
+                </div>
+            </div><br><br>
+
+  <script src="script5.js"></script>
+  <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Raid Calculator 5</a>
+                        </div>
+                        <img src="pic1 (1).png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Raid Calculator 5E</a>
+                        </div>
+                        <img src="pic1 (1).png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Raid Calculator 5EE</a>
+                        </div>
+                        <img src="pic1 (1).png" alt="">
+                    </div>
+        </section>
+
+ <section id="blog" class="blog">
+            <div class="container">
+               <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="" alt="">
+                </div>
+                <div class="flex-1 right">
+                    
+
+    <h1>RAID Calculator 10 & 50 & 60</h1>
+      <div class="container">
+        <label for="totalDisks3">Number of Drives:</label>
+        <input type="number" id="totalDisks3"  min="2" value="2"><br>
+      
+        <label for="usableSpace3">Disk Size (GB):</label>
+        <input type="number" id="usableSpace3"  min="2" value="100"><br>
+
+        <label for="raidLevel3">RAID Type:</label>
+        <select id="raidLevel3" >
+            <option value="10">RAID 10</option>
+            <option value="50">RAID 50</option>
+            <option value="60">RAID 60</option>
+        </select><br>
+     <button onclick="calculate10()">Calculate</button>
+    <p>Total Capacity: <span id="result10">0</span> GB</p>
+  </div>
+       
+
+                </div>
+            </div>  <script src="sc.js"></script>
+
+        </section>
+
+
+
+
+
+
+
+
+
+     
+        <footer>
+            <img class="footer-logo" src="./images/logo-2.png" alt="">
+            <div class="footer-socials">
+                <a href="#"><img src="./images/website.png" alt=""></a>
+                <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.png" alt=""></a>
+                <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.png" alt=""></a>
+                <a href="#"> <img src="./images/pintrest.png" alt=""></a>
+                <a href="https://www.instagram.com/"> <img src="./images/instagram.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                Copyright 2024 © Shivam Gupta
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
