@@ -26,6 +26,7 @@
                 <li><a href="#">D</a></li>
 		<li><a href="#">E</a></li>
                 <li><a href="#">F</a></li>
+		<li><a href="#">K</a></li>
                 <li><a href="#">G</a></li>
                 <li><a href="#">H</a></li>
 		<li><a href="#">I</a></li>
@@ -47,6 +48,7 @@
                             <a href="#work">Raid 5</a>
 			    <a href="#work">Raid 5E</a>
                             <a href="#work">Raid 5EE</a>
+                            <a href="#work">Raid 6</a>
                             <a href="#blog">Raid 10</a>
                             <a href="#blog">Raid 50</a>
                             <a href="#blog">Raid 60</a>
@@ -155,7 +157,7 @@
                 <div class="flex-1 right">
                     
 
-    <h1>RAID Calculator 5 & 5E & 5EE</h1>
+    <h1>RAID Calculator 5 & 5E & 5EE & 6</h1>
       <div class="container">
         <label for="totalDisks2">Number of Drives:</label>
         <input type="number" id="totalDisks2"  min="2" value="2"><br>
@@ -168,6 +170,8 @@
             <option value="5">RAID 5</option>
             <option value="5E">RAID 5E</option>
             <option value="5EE">RAID 5EE</option>
+            <option value="6">RAID 6</option>
+
         </select><br>
      <button onclick="calculate5()">Calculate</button>
     <p>Total Capacity: <span id="result5">0</span> GB</p>

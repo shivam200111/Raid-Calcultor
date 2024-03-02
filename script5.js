@@ -6,11 +6,12 @@ function calculate5() {
   var totalSpace1;
   if (raidLevel1 === '5') {
     totalSpace1 = usableSpace1 * (totalDisks1 - 1);
-  } else if (raidLevel1 === '5E') {
+  } else if (raidLevel1 === '5E'|| raidLevel1 === '6') {
     totalSpace1 = usableSpace1 * (totalDisks1 - 2);
   } else if (raidLevel1 === '5EE') {
     totalSpace1 = usableSpace1 * (totalDisks1 - 3);
   }
-
   document.getElementById('result5').innerHTML = + totalSpace1 ;
 }
+
+
